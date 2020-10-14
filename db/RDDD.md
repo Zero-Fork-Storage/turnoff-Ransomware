@@ -1,0 +1,2 @@
+Ransomware distribution domain database
+=======================================

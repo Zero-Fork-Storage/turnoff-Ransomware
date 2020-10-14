@@ -1,0 +1,31 @@
+{
+    "name": "TurnOff Ransomware",
+    "version": "1.0.0",
+    "author": "Misaka Mikoto (zeroday0619)'s and Turn Off Ransomware Contributors",
+    "description": "Web extension aimed at preventing ransomware infection by deleting and blocking access to known ransomware distribution sites from search results",
+    "permissions": ["tabs", "*://*/*", "webRequest", "webRequestBlocking"],
+    "background": {
+      "scripts": [
+        "polyfill/browser-polyfill.min.js",
+        "lib/core.js"
+      ],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_icon": "showcase/logo-192x192.png",
+      "default_title": "TurnOff Ransomware",
+      "default_popup": "interface/popup/index.html"
+    },
+    "icons": {
+      "256":"showcase/logo-256x256.png",
+      "192":"showcase/logo-192x192.png",
+      "128":"showcase/logo-128x128.png"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "turnoff-ransomware@misakamikoto.moe",
+        "strict_min_version": "63.0"
+      }
+    },
+    "manifest_version": 2
+}
